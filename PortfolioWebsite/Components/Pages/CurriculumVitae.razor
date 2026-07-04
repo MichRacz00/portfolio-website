@@ -1,0 +1,58 @@
+﻿@page "/curriculum-vitae"
+
+<PageTitle>Curriculum Vitae</PageTitle>
+
+<div class="cv-container">
+
+    <CvCard
+        Title="Michał Rączkiewicz"
+        SubTitle="Software Developer"
+        Location="Warsaw, Poland"
+        Period="2026"
+        BulletPoints="@(new List<string>
+                      {
+                          "C# / .NET backend developer",
+                          "Blazor Server applications",
+                          "Clean architecture enthusiast",
+                          "Building personal projects"
+                      })" />
+
+    <CvCard
+        Title="Software Engineer"
+        SubTitle="TechCorp Solutions"
+        Location="Warsaw, Poland"
+        Period="2023 - Present"
+        BulletPoints="@(new List<string>
+                      {
+                          "Built ASP.NET Core REST APIs",
+                          "Developed Blazor dashboards",
+                          "Improved EF Core query performance",
+                          "Worked with SQL Server databases"
+                      })" />
+
+    <CvCard
+        Title="Junior Developer"
+        SubTitle="Startup Hub"
+        Location="Kraków, Poland"
+        Period="2021 - 2023"
+        BulletPoints="@(new List<string>
+                      {
+                          "Maintained MVC web applications",
+                          "Implemented authentication systems",
+                          "Fixed UI and backend bugs",
+                          "Worked closely with frontend team"
+                      })" />
+
+    <CvCard
+        Title="Education"
+        SubTitle="University of Warsaw"
+        Location="Warsaw, Poland"
+        Period="2017 - 2021"
+        BulletPoints="@(new List<string>
+                      {
+                          "Bachelor in Computer Science",
+                          "Focus on software engineering",
+                          "Studied distributed systems and databases"
+                      })" />
+
+</div>
