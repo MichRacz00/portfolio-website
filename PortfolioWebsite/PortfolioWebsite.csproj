@@ -7,4 +7,10 @@
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Update="Components\Services\CvServiceConfig.cs">
+      <DependentUpon>ICvService.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>
