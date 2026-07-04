@@ -16,20 +16,23 @@
    ========================================================== */
 
 :root {
+    --bg: #f8f8f6;
+    --bg-secondary: #f2f3f5;
 
-    --bg: #fafaf8;
     --surface: #ffffff;
+    --surface-hover: #fbfbfb;
 
-    --text: #222;
-    --text-light: #666;
+    --text: #1f2937;
+    --text-muted: #6b7280;
 
-    --accent: #2047a7;
+    --primary: #1d4ed8;
+    --primary-dark: #1e40af;
 
-    --border: #d8d8d8;
+    --border: #d1d5db;
 
-    --max-width: 900px;
+    --shadow: 0 10px 25px rgba(0,0,0,.08);
 
-    --transition: .25s ease;
+    --transition: .3s ease;
 }
 
 /* ==========================================================
@@ -161,50 +164,6 @@ a:hover{
     width:min(var(--max-width),90%);
 
     margin:auto;
-}
-
-/* ==========================================================
-   Navigation
-   ========================================================== */
-
-nav{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:2rem 0;
-
-    border-bottom:1px solid var(--border);
-}
-
-nav ul{
-
-    display:flex;
-
-    list-style:none;
-
-    gap:2rem;
-}
-
-nav a{
-
-    color:var(--text);
-
-    font-size:.95rem;
-
-    text-transform:uppercase;
-
-    letter-spacing:.08em;
-}
-
-.logo{
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:1.7rem;
 }
 
 /* ==========================================================

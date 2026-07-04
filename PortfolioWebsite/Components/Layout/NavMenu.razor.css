@@ -1,22 +1,25 @@
 .crossbar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-    width: 100%;
+    width: 60%;
     height: 60px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     padding: 0 20px;
 
-    background: linear-gradient(90deg, rgb(15 77 103), #3a0647);
-    color: white;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(12px);
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    box-sizing: border-box;
+    border: 2px solid var(--text);
+    border-radius: 999px;
+    
+    box-shadow: var(--shadow);
 
     z-index: 1000;
 }
