@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="Components\Services\CvServiceConfig.cs">
-      <DependentUpon>ICvService.cs</DependentUpon>
-    </Compile>
+    <_ContentIncludedByDefault Remove="wwwroot\data\cv-2026.json" />
   </ItemGroup>
 
 </Project>

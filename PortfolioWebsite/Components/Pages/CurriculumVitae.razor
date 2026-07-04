@@ -1,94 +1,23 @@
 ﻿@page "/curriculum-vitae"
+@using PortfolioWebsite.Components.Models
+@using PortfolioWebsite.Components.Services
+@inject ICvService CvService
 
 <PageTitle>Curriculum Vitae</PageTitle>
 
 <div class="cv-container">
-
-    <CVCard
-        Title="Michał Rączkiewicz"
-        SubTitle="Software Developer"
-        Location="Warsaw, Poland"
-        Period="2026"
-        BulletPoints="@(new List<string>
-                      {
-                          "C# / .NET backend developer",
-                          "Blazor Server applications",
-                          "Clean architecture enthusiast",
-                          "Building personal projects"
-                      })" />
-
-    <CVCard
-        Title="Software Engineer"
-        SubTitle="TechCorp Solutions"
-        Location="Warsaw, Poland"
-        Period="2023 - Present"
-        BulletPoints="@(new List<string>
-                      {
-                          "Built ASP.NET Core REST APIs",
-                          "Developed Blazor dashboards",
-                          "Improved EF Core query performance",
-                          "Worked with SQL Server databases"
-                      })" />
-
-    <CVCard
-        Title="Junior Developer"
-        SubTitle="Startup Hub"
-        Location="Kraków, Poland"
-        Period="2021 - 2023"
-        BulletPoints="@(new List<string>
-                      {
-                          "Maintained MVC web applications",
-                          "Implemented authentication systems",
-                          "Fixed UI and backend bugs",
-                          "Worked closely with frontend team"
-                      })" />
-
-    <CVCard
-        Title="Education"
-        SubTitle="University of Warsaw"
-        Location="Warsaw, Poland"
-        Period="2017 - 2021"
-        BulletPoints="@(new List<string>
-                      {
-                          "Bachelor in Computer Science",
-                          "Focus on software engineering",
-                          "Studied distributed systems and databases"
-                      })" />
-    
-    <CVCard
-        Title="Education"
-        SubTitle="University of Warsaw"
-        Location="Warsaw, Poland"
-        Period="2017 - 2021"
-        BulletPoints="@(new List<string>
-                      {
-                          "Bachelor in Computer Science",
-                          "Focus on software engineering",
-                          "Studied distributed systems and databases"
-                      })" />
-    
-    <CVCard
-        Title="Education"
-        SubTitle="University of Warsaw"
-        Location="Warsaw, Poland"
-        Period="2017 - 2021"
-        BulletPoints="@(new List<string>
-                      {
-                          "Bachelor in Computer Science",
-                          "Focus on software engineering",
-                          "Studied distributed systems and databases"
-                      })" />
-    
-    <CVCard
-        Title="Education"
-        SubTitle="University of Warsaw"
-        Location="Warsaw, Poland"
-        Period="2017 - 2021"
-        BulletPoints="@(new List<string>
-                      {
-                          "Bachelor in Computer Science",
-                          "Focus on software engineering",
-                          "Studied distributed systems and databases"
-                      })" />
-
+    @foreach (var item in CvItems)
+    {
+        <CVCard Item="@item" />
+    }
 </div>
+
+@code {
+    private List<CvItem> CvItems = new();
+
+    protected override void OnInitialized()
+    {
+        CvItems = CvService.GetCvItems();
+        Console.WriteLine(CvItems.Count);
+    }
+}
