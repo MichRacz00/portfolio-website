@@ -1,25 +1,31 @@
 ﻿@using PortfolioWebsite.Components.Models
 <div class="cv-card">
 
-    @if (!string.IsNullOrEmpty(Item?.Title))
-    {
-        <h3>@Item.Title</h3>
-    }
+    <div class="cv-header">
+        <div class="cv-right-column">
+            @if (!string.IsNullOrEmpty(Item?.Title))
+            {
+                <h3 class="cv-title">@Item.Title</h3>
+            }
+        
+            @if (!string.IsNullOrEmpty(Item?.SubTitle))
+            {
+                <h4 class="cv-subtitle">@Item.SubTitle</h4>
+            }
+        </div>
 
-    @if (!string.IsNullOrEmpty(Item?.SubTitle))
-    {
-        <h4>@Item.SubTitle</h4>
-    }
-
-    @if (!string.IsNullOrEmpty(Item?.Location))
-    {
-        <div>@Item.Location</div>
-    }
-
-    @if (!string.IsNullOrEmpty(Item?.Period))
-    {
-        <div class="cv-period">@Item.Period</div>
-    }
+        <div class="cv-left-column">
+            @if (!string.IsNullOrEmpty(Item?.Location))
+            {
+                <div class="cv-location">@Item.Location</div>
+            }
+        
+            @if (!string.IsNullOrEmpty(Item?.Period))
+            {
+                <div class="cv-period">@Item.Period</div>
+            }
+        </div>
+    </div>
 
     @if (Item?.BulletPoints?.Any() == true)
     {

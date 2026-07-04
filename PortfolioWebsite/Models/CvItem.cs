@@ -7,7 +7,7 @@ public class CvItem
     [JsonPropertyName("title")]
     public string Title { get; set; } = "";
     
-    [JsonPropertyName("subtTitle")]
+    [JsonPropertyName("subTitle")]
     public string SubTitle { get; set; } = "";
     
     [JsonPropertyName("location")]
