@@ -1,10 +1,13 @@
 using PortfolioWebsite.Components;
+using PortfolioWebsite.Components.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddSingleton<ICvService, CvServiceConfig>();
 
 var app = builder.Build();
 

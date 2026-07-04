@@ -1,0 +1,22 @@
+﻿@page "/curriculum-vitae"
+@using PortfolioWebsite.Components.Models
+@using PortfolioWebsite.Components.Services
+@inject ICvService CvService
+
+<PageTitle>Curriculum Vitae</PageTitle>
+
+<div class="cv-container">
+    @foreach (var item in CvItems)
+    {
+        <CVCard Item="@item" />
+    }
+</div>
+
+@code {
+    private List<CvItem> CvItems = new();
+
+    protected override void OnInitialized()
+    {
+        CvItems = CvService.GetCvItems();
+    }
+}

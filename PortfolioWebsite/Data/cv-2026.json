@@ -1,0 +1,51 @@
+﻿{
+  "items": [
+    {
+      "title": "Michał Rączkiewicz",
+      "subTitle": "Software Developer",
+      "location": "Wrocław, Poland",
+      "period": "2026",
+      "bulletPoints": [
+        "C# / .NET backend developer",
+        "Blazor Web Apps (Server / Web App)",
+        "Clean Architecture enthusiast",
+        "Building personal and portfolio projects"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "subTitle": "TechCorp Solutions",
+      "location": "Warsaw, Poland",
+      "period": "2023 - Present",
+      "bulletPoints": [
+        "Built ASP.NET Core REST APIs",
+        "Developed Blazor dashboards for internal tools",
+        "Optimized EF Core queries and database performance",
+        "Worked with SQL Server and CI/CD pipelines"
+      ]
+    },
+    {
+      "title": "Junior Developer",
+      "subTitle": "Startup Hub",
+      "location": "Kraków, Poland",
+      "period": "2021 - 2023",
+      "bulletPoints": [
+        "Maintained ASP.NET MVC applications",
+        "Implemented authentication and authorization systems",
+        "Fixed frontend and backend bugs",
+        "Collaborated closely with frontend developers"
+      ]
+    },
+    {
+      "title": "Education",
+      "subTitle": "University of Warsaw",
+      "location": "Warsaw, Poland",
+      "period": "2017 - 2021",
+      "bulletPoints": [
+        "Bachelor's degree in Computer Science",
+        "Focus on software engineering and distributed systems",
+        "Studied databases, algorithms, and system design"
+      ]
+    }
+  ]
+}
