@@ -1,4 +1,14 @@
 ﻿
+.cv-container {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cv-card {
     border: 1px solid var(--border);
     border-radius: 10px;
