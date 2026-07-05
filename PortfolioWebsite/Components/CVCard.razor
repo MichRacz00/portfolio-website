@@ -5,7 +5,7 @@
         <div class="cv-right-column">
             @if (!string.IsNullOrEmpty(Item?.Title))
             {
-                <h3 class="cv-title">@Item.Title</h3>
+                <h4 class="cv-title">@Item.Title</h4>
             }
         
             @if (!string.IsNullOrEmpty(Item?.SubTitle))
@@ -17,12 +17,12 @@
         <div class="cv-left-column">
             @if (!string.IsNullOrEmpty(Item?.Location))
             {
-                <div class="cv-location">@Item.Location</div>
+                <h4 class="cv-location">@Item.Location</h4>
             }
         
             @if (!string.IsNullOrEmpty(Item?.Period))
             {
-                <div class="cv-period">@Item.Period</div>
+                <h4 class="cv-period">@Item.Period</h4>
             }
         </div>
     </div>
