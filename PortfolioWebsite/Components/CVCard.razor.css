@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 12px;
+    margin-bottom: 6px;
 }
 
 .cv-right-column {
@@ -34,6 +34,28 @@
 }
 
 .cv-period {
-    font-size: 0.9rem;
-    color: gray;
+    font-size: 1rem;
+}
+
+.cv-title,
+.cv-subtitle, 
+.cv-location,
+.cv-period {
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+.cv-subtitle,
+.cv-location,
+.cv-period {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.cv-content {
+    margin-left: 10px;
+}
+
+li {
+    font-weight: lighter;
 }
