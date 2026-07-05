@@ -1,50 +1,44 @@
 ﻿{
   "items": [
     {
-      "title": "Michał Rączkiewicz",
-      "subTitle": "Software Developer",
-      "location": "Wrocław, Poland",
-      "period": "2026",
+      "title": "Software Engineer",
+      "subTitle": "Netcompany",
+      "location": "Warsaw, Poland",
+      "period": "Nov 2025 - Present",
       "bulletPoints": [
-        "C# / .NET backend developer",
-        "Blazor Web Apps (Server / Web App)",
-        "Clean Architecture enthusiast",
-        "Building personal and portfolio projects"
+        "Developed a greenfield cloud-native microservice using Spring Boot. Integrated the application with Azure services (Blob Storage, Cosmos DB, Key Vault) using Managed Identity authentication.",
+        "Designed and implemented GitHub Actions workflows to provision, configure, and deploy cloud infrastructure via Bicep follwing Infrastructure as Code.",
+        "Implemented continuous integration workflows to enforce test coverage and build and publish Docker containers for release."
       ]
     },
     {
       "title": "Software Engineer",
-      "subTitle": "TechCorp Solutions",
+      "subTitle": "Globus Telecom",
       "location": "Warsaw, Poland",
-      "period": "2023 - Present",
+      "period": "Jan 2024 - Sep 2024",
       "bulletPoints": [
-        "Built ASP.NET Core REST APIs",
-        "Developed Blazor dashboards for internal tools",
-        "Optimized EF Core queries and database performance",
-        "Worked with SQL Server and CI/CD pipelines"
+        "Delivered a containerized microservice, to processes large Excel call logs, load data into a database, and generate aggregated reports for employees.",
+        "Designed and implemented a GitHub Actions workflow that deploys microservices into Docker containers, with builds to both ARM and x86 machines.",
+        "Designed a continuous deployment workflow that updates the microservice running on on-premise server."
       ]
     },
     {
-      "title": "Junior Developer",
-      "subTitle": "Startup Hub",
-      "location": "Kraków, Poland",
-      "period": "2021 - 2023",
+      "title": "Delft University of Technology",
+      "subTitle": "Master of Science in Computer Science",
+      "location": "Delft, Netherlands",
+      "period": "Sep 2023 – June 2025",
       "bulletPoints": [
-        "Maintained ASP.NET MVC applications",
-        "Implemented authentication and authorization systems",
-        "Fixed frontend and backend bugs",
-        "Collaborated closely with frontend developers"
+        "Thesis: Model Checking Under JAM21 Memory Model– supervisor recommended publication; developed first experimental model checking algorithm for verifying Java memory model (Grade: 8.19/10)",
+        "Coursework: Distributed & Advanced Algorithms, Security & Cryptography, Software Architecture"
       ]
     },
     {
-      "title": "Education",
-      "subTitle": "University of Warsaw",
-      "location": "Warsaw, Poland",
-      "period": "2017 - 2021",
+      "title": "University of Twente",
+      "subTitle": "Bachelor of Science in Computer Science",
+      "location": "Enschede, Netherlands",
+      "period": "Sep 2020– July 2023",
       "bulletPoints": [
-        "Bachelor's degree in Computer Science",
-        "Focus on software engineering and distributed systems",
-        "Studied databases, algorithms, and system design"
+        "Thesis: Better Approach To Mobile Ad-hoc Networking in MaritimeManet– contributed to maritime ad-hoc network now deployed by Thales. Full text here (Grade: 7.27/10)"
       ]
     }
   ]
