@@ -1,0 +1,12 @@
+﻿.profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 2px solid var(--text);
+    box-shadow: var(--shadow);
+    
+    display: block;
+    margin: 20px auto;
+}
