@@ -87,10 +87,12 @@ h1 {
 
 h2 {
     font-size:2rem;
+    margin-bottom:.3rem;
 }
 
 h3 {
     font-size:1.2rem;
+    margin-bottom:.1rem;
 }
 
 p,
@@ -175,4 +177,13 @@ footer {
 
 ::selection{
     background:#d9e6ff;
+}
+
+/* ==========================================================
+   Images
+   ========================================================== */
+
+img {
+    border: 2px solid var(--text);
+    border-radius: 20px;
 }
