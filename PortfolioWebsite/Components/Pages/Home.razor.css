@@ -20,9 +20,13 @@
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-.logo-image.mini {
-    max-height: 40px;
+.logo-image:hover {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
     animation: float 5s ease-in-out infinite;
+}
+
+.logo-image.mini {
+    max-height: 75px;
 }
 
 @keyframes float {
