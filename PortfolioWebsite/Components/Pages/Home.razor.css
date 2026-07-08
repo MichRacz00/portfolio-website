@@ -37,3 +37,36 @@
         transform: translateY(-8px) rotate(1deg);
     }
 }
+
+/* ==========================================================
+   Table
+   ========================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+table td {
+    padding: 0 0.8rem;
+    vertical-align: middle;
+}
+
+table td:nth-child(1) {
+    width: 20%;
+    text-align: right;
+}
+
+table td:nth-child(2) {
+    text-align: left;
+}
+
+table td:nth-child(3) {
+    text-align: center;
+}
+
+table h3 {
+    margin: 0;
+}
