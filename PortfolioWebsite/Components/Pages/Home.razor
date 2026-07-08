@@ -3,18 +3,115 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Welcome</h1>
 
-Welcome to your new app.
+<h4>
+    I am a Software Engineer specializing in .NET backend systems, with a strong focus on cloud-native microservice architectures. I build systems that support scale and enjoy working close to production environments. I value team work, ownership, and taking responsibility for delivering solutions that work.
+</h4>
 
+    <h2>What I Do</h2>
 <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis sit amet ipsum elementum malesuada. Suspendisse potenti. Suspendisse suscipit, lorem nec placerat aliquam, nulla purus mollis urna, vel tempus ligula odio vel lacus. Sed pretium, nibh sit amet gravida lobortis, nulla diam dapibus est, quis mattis dolor odio a enim. Proin condimentum pretium ligula in volutpat. Aliquam erat volutpat. Etiam rutrum consectetur enim eu tempor. Etiam sodales urna dignissim, gravida mi non, fringilla mi. Donec nec mauris luctus, rhoncus arcu nec, congue tellus. Curabitur sit amet arcu libero. Ut malesuada dolor a efficitur facilisis. Vivamus bibendum tincidunt varius.
-</p><p>
-Maecenas mattis eget velit in lacinia. Morbi libero ligula, mattis sed pretium eu, aliquet in justo. Aliquam erat volutpat. Praesent et molestie lacus, id aliquam urna. Nam lectus ipsum, euismod sed augue in, iaculis commodo nisi. Sed tempus lectus non porttitor mattis. Morbi posuere porta diam, vel venenatis nisi consectetur et.
-</p><p>
-Morbi nec convallis lectus, et vehicula diam. Donec vehicula nulla sed urna sodales, at volutpat ligula vulputate. In posuere convallis erat, vel auctor quam convallis quis. Nullam pharetra, magna eget molestie pellentesque, est nisl auctor ligula, in egestas quam tortor nec arcu. Phasellus faucibus vehicula turpis. Sed a lorem venenatis, lobortis nulla maximus, ultricies nisl. Praesent posuere sodales elit, sed faucibus risus semper pharetra. Morbi rhoncus nunc eget interdum blandit. Phasellus fermentum molestie sem. Praesent nisi enim, finibus nec pharetra nec, ullamcorper non lectus. Praesent commodo suscipit sapien sed tempus. Aliquam at neque ut leo consequat dapibus. Praesent massa nibh, bibendum non lectus id, tincidunt posuere magna.
-</p><p>
-Sed luctus libero vel interdum blandit. Vivamus eget laoreet neque. Pellentesque facilisis aliquam est, vitae ultricies nisi pharetra eu. In arcu eros, posuere eget ultrices vel, placerat eu nibh. Maecenas at quam velit. Sed vulputate, mi vitae luctus ullamcorper, erat metus faucibus est, ut porttitor augue nulla quis purus. Vivamus lacinia ac arcu a congue. In finibus feugiat malesuada. Mauris tristique turpis lorem, ac tristique eros tincidunt nec. Nam semper dapibus vestibulum. Nulla vitae nibh ligula. Fusce aliquam venenatis feugiat. Aliquam at sapien tellus.
-</p><p>
-Sed maximus mauris lectus, at condimentum eros varius et. Integer sed massa suscipit, aliquet augue ut, facilisis massa. Praesent id convallis tortor. Phasellus sagittis nibh quis eros dignissim dapibus. Quisque libero lectus, tristique id commodo a, viverra at tellus. Proin rhoncus sagittis lacus, vitae fermentum felis viverra id. Fusce risus nunc, congue luctus purus eget, sollicitudin pulvinar dolor.
+My day-to-day work involves building and maintaining .NET microservice applications, connecting them with Kafka, and deploying them on Kubernetes. I regularly work with high-throughput event-driven systems and troubleshoot complex production systems.
 </p>
+<p>
+I have experience in cloud-native applications deployed on Microsoft Azure, including designing and implementing microservice components such as Kafka-based data adapters and processing services.
+</p>
+<p>
+    Beyond development, I am actively involved in debugging and monitoring systems in production using observability tools such as Grafana, Kibana, and Kafka UI tools (Kowl/Redpanda). I am comfortable working in environments where reliability and fast incident response are critical.
+</p>
+
+<h2>Selected Experiance Higlihts</h2>
+<div>
+    <h3>Kafka-based data integration (DSV pilot project)</h3>
+    <div class="highlight-card">
+        <img class="highlight-image" src="Images/Highlights/dsv.jpg">
+        <div class="highlight-description">
+            <p>
+                Designed and implemented a Kafka-based data adapter microservice for a logistics data processing platform. The service consumed external messages, enriched them via external APIs, and published the processed data to internal Kafka topics within a cloud-native microservice architecture deployed on Azure.
+            </p>
+            <p>
+                In addition to implementation, I participated in client-facing technical discussions to align integration requirements and ensure compatibility between systems.
+            </p>
+            <p>
+                The imeplentation was delivered as a part of Netcompany's <a href="https://netcompany.com/platforms/pulse/">Pulse</a> platform for the logistics company <a href="https://netcompany.com/dsv/">DSV</a>.
+            </p>
+        </div>
+    </div>
+</div>
+<div>
+    <h3>Production releases and operational ownership</h3>
+    <div class="highlight-card">
+        <img class="logo-image" src="Images/Highlights/deployment.png">
+        <div class="highlight-description">
+            <p>
+                Planned and executed production deployments of microservice application with more than 20 unique Kubernetes pods in the cluster. Diagnosed and fixed issues that occured during deployment.
+            </p>
+            <p>
+                Developed tools to automate parts of the release workflow, reducing manual effort and human error during production deployments. In some cases, extended this work into more structured automation to support reliable release processes under tight deployment windows.
+            </p>
+            <p>
+                Worked with observability tools such as Grafana, Kibana, and Kafka monitoring tools (e.g. Kowl/Redpanda) to track system health during deployment.
+            </p>
+        </div>
+    </div>
+</div>
+<div>
+    <h3>Distributed system troubleshooting (Munich Airport project)</h3>
+    <div class="highlight-card">
+        <img class="highlight-image" src="Images/Highlights/airport.jpg">
+        <div class="highlight-description">
+            <p>
+                Worked as part of a maintenance team on a large-scale distributed microservice system (~20 services, ~300 Kafka topics). Gained experience rapidly understanding an unfamiliar codebase and diagnosing production issues across service boundaries.
+            </p>
+            <p>
+                Used logs, metrics, and database inspection (PostgreSQL) to trace issues in event-driven workflows and ensure system stability in production environments.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<h3>Email processing </h3>
+<p>
+    Developed tools and scripts to automate parts of the release and operational workflow, reducing manual effort during production deployments. In some cases, extended this work into more structured automation to support repeatable and reliable release processes under tight deployment windows.
+</p>
+
+<h2>My Technical Stack</h2>
+
+<table>
+    <tr>
+        <td><h3>.NET</h3></td>
+        <td><p>Built backend microservices, as well as automation tools for release workflows using ASP.NET.</p></td>
+        <td><img class="logo-image mini" src="Images/Logos/dotnet.jpg"></td>
+    </tr>
+    <tr>
+        <td><h3>Kafka</h3></td>
+        <td><p>Leveraged Kafka as a decoupling device in microservice architecture.</p></td>
+        <td><img class="logo-image mini" src="Images/Logos/kafka.png"></td>
+    </tr>
+    <tr>
+        <td><h3>Docker</h3></td>
+        <td><p>Containerized application; used with docker-compose as a local microservice orchestrator.</p></td>
+        <td><img class="logo-image mini" src="Images/Logos/docker.png"></td>
+    </tr>
+    <tr>
+        <td><h3>Kubernetes</h3></td>
+        <td><p>Deployed microservices to a Kubernetes cluster; troubleshoot pods.</p></td>
+        <td><img class="logo-image mini" src="Images/Logos/kubernetes.png"></td>
+    </tr>
+    <tr>
+        <td><h3>Azure</h3></td>
+        <td><p>Worked with cloud-native deployments and infrastructure supporting cloud-native systems and CI/CD pipelines.</p></td>
+        <td><img class="logo-image mini" src="Images/Logos/azure.png"></td>
+    </tr>
+    <tr>
+        <td><h3>Observability</h3>Kibana+Elasticsearch, Grafana</td>
+        <td><p>Monitored distributed systems in production, investigated incidents, and analyzed logs to resolve issues across services.</p></td>
+        <td><img class="logo-image mini" src="Images/Logos/kibana.png"></td>
+    </tr>
+    <tr>
+        <td><h3>PostgreSQL</h3></td>
+        <td><p>Used databases as data storage and to track application metadata.</p></td>
+        <td><img class="logo-image mini" src="Images/Logos/postgres.png"></td>
+    </tr>
+</table>

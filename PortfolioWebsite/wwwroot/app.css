@@ -79,28 +79,29 @@ li {
 }
 
 h1 {
-    font-size:4.4rem;
+    font-size:4rem;
     line-height:1;
     margin-bottom:.5rem;
     font-weight:600;
 }
 
 h2 {
-    font-size:2.2rem;
-    margin-bottom:2rem;
+    font-size:2rem;
+    margin-bottom:.3rem;
 }
 
 h3 {
-    font-size:1.4rem;
-    margin-bottom:.5rem;
+    font-size:1.2rem;
+    margin-bottom:.1rem;
 }
 
 p,
 li {
-    font-size:1rem;
-    line-height:1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.6rem;
     color:var(--text);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -176,4 +177,20 @@ footer {
 
 ::selection{
     background:#d9e6ff;
+}
+
+/* ==========================================================
+   Images
+   ========================================================== */
+
+img {
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.logo-image {
+    border: 0;
+    margin: 0;
+    border-radius: 0;
 }

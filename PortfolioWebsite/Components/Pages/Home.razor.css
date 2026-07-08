@@ -1,0 +1,72 @@
+
+.highlight-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.highlight-image {
+    height: 180px;
+    max-width: 600px;
+    aspect-ratio: 1 / 1;
+    object-position: center;
+    flex-shrink: 0;
+}
+
+.logo-image {
+    max-height: 120px;
+    max-width: 600px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.logo-image:hover {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
+    animation: float 5s ease-in-out infinite;
+}
+
+.logo-image.mini {
+    max-height: 75px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+    50% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+}
+
+/* ==========================================================
+   Table
+   ========================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+table td {
+    padding: 0 0.8rem;
+    vertical-align: middle;
+}
+
+table td:nth-child(1) {
+    width: 20%;
+    text-align: right;
+}
+
+table td:nth-child(2) {
+    text-align: left;
+}
+
+table td:nth-child(3) {
+    text-align: center;
+}
+
+table h3 {
+    margin: 0;
+}
