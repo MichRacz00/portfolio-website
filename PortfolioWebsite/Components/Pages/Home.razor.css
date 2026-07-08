@@ -2,7 +2,7 @@
 .highlight-card {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
     gap: 20px;
 }
 
@@ -12,4 +12,9 @@
     aspect-ratio: 1 / 1;
     object-position: center;
     flex-shrink: 0;
+}
+
+.logo-image {
+    max-height: 120px;
+    max-width: 300px;
 }
