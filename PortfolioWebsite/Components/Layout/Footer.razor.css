@@ -1,0 +1,9 @@
+footer {
+    width: min(var(--max-width), 90%);
+    padding: 3rem 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: .9rem;
+    border-top: 2px solid var(--border);
+    margin-top: 3rem;
+}
