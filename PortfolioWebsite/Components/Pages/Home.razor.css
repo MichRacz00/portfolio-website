@@ -1,0 +1,15 @@
+
+.highlight-card {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.highlight-image {
+    height: 180px;
+    max-width: 600px;
+    aspect-ratio: 1 / 1;
+    object-position: center;
+    flex-shrink: 0;
+}
