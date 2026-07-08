@@ -17,4 +17,19 @@
 .logo-image {
     max-height: 120px;
     max-width: 600px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.logo-image.mini {
+    max-height: 40px;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+    50% {
+        transform: translateY(-8px) rotate(1deg);
+    }
 }
