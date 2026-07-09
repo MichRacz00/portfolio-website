@@ -1,5 +1,5 @@
 ﻿{
-  "items": [
+  "experience": [
     {
       "title": "Software Engineer",
       "subTitle": "Netcompany",
@@ -21,7 +21,9 @@
         "Designed and implemented a GitHub Actions workflow that deploys microservices into Docker containers, with builds to both ARM and x86 machines.",
         "Designed a continuous deployment workflow that updates the microservice running on on-premise server."
       ]
-    },
+    }
+  ],
+  "education": [
     {
       "title": "Delft University of Technology",
       "subTitle": "Master of Science in Computer Science",

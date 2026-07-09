@@ -4,5 +4,5 @@ namespace PortfolioWebsite.Components.Services;
 
 public interface ICvService
 {
-    List<CvItem> GetCvItems();
+    List<CvSection> GetCvSections();
 }

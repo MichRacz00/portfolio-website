@@ -6,17 +6,26 @@
 <PageTitle>Curriculum Vitae</PageTitle>
 
 <div class="cv-container">
-    @foreach (var item in CvItems)
-    {
-        <CVCard Item="@item" />
-    }
+	@foreach (var section in CvSections) {
+		@foreach (var cvItem in section.Items) {
+			@switch (section.Type) {
+    			case CvSectionType.Experience:
+                	<CVExperianceItem Item=cvItem />
+                	break;
+
+   				case CvSectionType.Education:
+                	<CVCard Item=cvItem />
+                	break;
+        	}
+		}
+	}
 </div>
 
 @code {
-    private List<CvItem> CvItems = new();
+    private List<CvSection> CvSections = new();
 
     protected override void OnInitialized()
     {
-        CvItems = CvService.GetCvItems();
+        CvSections = CvService.GetCvSections();
     }
 }
