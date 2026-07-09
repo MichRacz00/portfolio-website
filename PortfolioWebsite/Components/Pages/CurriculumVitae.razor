@@ -11,19 +11,19 @@
 		@foreach (var cvItem in section.Items) {
 			@switch (section.Type) {
     			case CvSectionType.Experience:
-                	<CvExperianceCard Item="cvItem" />
+                	<CvExperianceCard Item="(CvExperianceItem) cvItem" />
                 	break;
 
             	case CvSectionType.Education:
-                	<CvEducationCard Item="cvItem" />
+                	<CvEducationCard Item="(CvEducationItem) cvItem" />
                 	break;
 			
             	case CvSectionType.TechnicalSkills:
-                	<CvTechnicalSkillsCard Item="cvItem" />
+                	<CvTechnicalSkillsCard Item="(CvTechnicalSkillsItem) cvItem" />
                 	break;
 			
             	case CvSectionType.SoftSkills:
-                	<CvSoftSkillsCard Item="cvItem" />
+                	<CvSoftSkillsCard Item="(CvSoftSkillsItem) cvItem" />
                 	break;
         	}
 		}

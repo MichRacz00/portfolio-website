@@ -2,7 +2,7 @@
 
 namespace PortfolioWebsite.Components.Models;
 
-public class CvItem
+public abstract class CvItem
 {
     [JsonPropertyName("title")]
     public string Title { get; set; } = "";
@@ -18,7 +18,4 @@ public class CvItem
     
     [JsonPropertyName("bulletPoints")]
     public List<string> BulletPoints { get; set; } = new();
-
-    [JsonPropertyName("content")]
-    public string Content { get; set; } = "";
 }

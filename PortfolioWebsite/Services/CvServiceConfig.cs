@@ -26,15 +26,13 @@ public class CvServiceConfig : ICvService
 
         foreach (var property in document.RootElement.EnumerateObject())
         {
-            _sections.Add(new CvSection
+            var section = new CvSection
             {
                 Title = property.Name,
-                TypeKey = property.Name.ToLowerInvariant(),
-                Items = JsonSerializer.Deserialize<List<CvItem>>(
-                            property.Value.GetRawText())
-                        ?? throw new InvalidOperationException(
-                            $"Failed to deserialize section '{property.Name}'.")
-            });
+                TypeKey = property.Name.ToLowerInvariant()
+            };
+            section.DeserializeItems(property.Value.GetRawText());
+            _sections.Add(section);
         }
     }
 
