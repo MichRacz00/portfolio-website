@@ -12,6 +12,14 @@
     align-items: stretch;
 }
 
+.cv-section-title {
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.25rem;
+}
+
 .cv-card {
     border: 1px solid var(--border);
     border-radius: 10px;

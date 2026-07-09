@@ -1,12 +1,21 @@
+using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 using System.Text.Json;
 
 namespace PortfolioWebsite.Components.Models;
 
 public enum CvSectionType
 {
+    [Display(Name = "Experience")]
     Experience,
+
+    [Display(Name = "Education")]
     Education,
+
+    [Display(Name = "Technical Skills")]
     TechnicalSkills,
+
+    [Display(Name = "Soft Skills")]
     SoftSkills
 }
 
@@ -17,6 +26,10 @@ public class CvSection
     public List<CvItem> Items { get; set; } = new();
 
     public CvSectionType Type { get; private set; }
+
+    public string DisplayName => typeof(CvSectionType)
+        .GetField(Type.ToString())!
+        .GetCustomAttribute<DisplayAttribute>()?.Name ?? Type.ToString();
 
     public string TypeKey
     {

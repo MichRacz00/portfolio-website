@@ -7,9 +7,10 @@
 <PageTitle>Curriculum Vitae</PageTitle>
 
 <div class="cv-container">
-	@foreach (var section in CvSections) {
-		@foreach (var cvItem in section.Items) {
-			@switch (section.Type) {
+	@foreach (var cvSection in CvSections) {
+		<h2 class="cv-section-title">@cvSection.DisplayName</h2>
+		@foreach (var cvItem in cvSection.Items) {
+			@switch (cvSection.Type) {
     			case CvSectionType.Experience:
                 	<CvExperianceCard Item="(CvExperianceItem) cvItem" />
                 	break;
