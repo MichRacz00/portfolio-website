@@ -1,0 +1,11 @@
+@using PortfolioWebsite.Components.Models
+<div class="cv-card">
+
+    <h4 class="cv-title">@Item.Title</h4>
+    <p>@((MarkupString)Item.Content)</p>
+    
+</div>
+@code {
+    [Parameter, EditorRequired]
+    public CvSoftSkillsItem Item { get; set; }
+}

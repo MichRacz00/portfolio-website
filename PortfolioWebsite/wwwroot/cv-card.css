@@ -1,12 +1,23 @@
-﻿
+/* ==========================================================
+   CV Card
+   ========================================================== */
+
 .cv-container {
-    max-width: 720px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
 
     display: flex;
     flex-direction: column;
     align-items: stretch;
+}
+
+.cv-section-title {
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.25rem;
 }
 
 .cv-card {
@@ -33,16 +44,13 @@
     min-width: 140px;
 }
 
-.cv-period {
-    font-size: 1rem;
-}
-
 .cv-title,
-.cv-subtitle, 
+.cv-subtitle,
 .cv-location,
 .cv-period {
-    font-size: 1rem;
-    line-height: 1.1rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: bold;
 }
 
 .cv-subtitle,
@@ -56,6 +64,7 @@
     margin-left: 10px;
 }
 
-li {
-    font-weight: lighter;
+.cv-card a {
+    cursor: pointer;
+    pointer-events: auto;
 }

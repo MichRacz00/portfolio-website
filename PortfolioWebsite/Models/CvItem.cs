@@ -2,7 +2,7 @@
 
 namespace PortfolioWebsite.Components.Models;
 
-public class CvItem
+public abstract class CvItem
 {
     [JsonPropertyName("title")]
     public string Title { get; set; } = "";

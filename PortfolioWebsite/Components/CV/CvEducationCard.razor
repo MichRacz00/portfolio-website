@@ -1,0 +1,45 @@
+@using PortfolioWebsite.Components.Models
+<div class="cv-card">
+
+    <div class="cv-header">
+        <div class="cv-right-column">
+            @if (!string.IsNullOrEmpty(Item?.Title))
+            {
+                <h4 class="cv-title">@Item.Title</h4>
+            }
+        
+            @if (!string.IsNullOrEmpty(Item?.SubTitle))
+            {
+                <h4 class="cv-subtitle">@Item.SubTitle</h4>
+            }
+        </div>
+
+        <div class="cv-left-column">
+            @if (!string.IsNullOrEmpty(Item?.Location))
+            {
+                <h4 class="cv-location">@Item.Location</h4>
+            }
+        
+            @if (!string.IsNullOrEmpty(Item?.Period))
+            {
+                <h4 class="cv-period">@Item.Period</h4>
+            }
+        </div>
+    </div>
+
+    @if (Item?.BulletPoints?.Any() == true)
+    {
+        <ul class="cv-content">
+            @foreach (var point in Item.BulletPoints)
+            {
+                <li>@((MarkupString)point)</li>
+            }
+        </ul>
+    }
+
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public CvEducationItem Item { get; set; }
+}

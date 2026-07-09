@@ -1,4 +1,4 @@
-﻿@using PortfolioWebsite.Components.Models
+@using PortfolioWebsite.Components.Models
 <div class="cv-card">
 
     <div class="cv-header">
@@ -32,7 +32,7 @@
         <ul class="cv-content">
             @foreach (var point in Item.BulletPoints)
             {
-                <li>@point</li>
+                <li>@((MarkupString)point)</li>
             }
         </ul>
     }
@@ -41,5 +41,5 @@
 
 @code {
     [Parameter, EditorRequired]
-    public CvItem Item { get; set; }
+    public CvExperianceItem Item { get; set; }
 }
