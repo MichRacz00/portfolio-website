@@ -40,8 +40,9 @@
 .cv-subtitle,
 .cv-location,
 .cv-period {
-    font-size: 1rem;
-    line-height: 1.1rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: bold;
 }
 
 .cv-subtitle,
@@ -53,4 +54,9 @@
 
 .cv-content {
     margin-left: 10px;
+}
+
+.cv-card a {
+    cursor: pointer;
+    pointer-events: auto;
 }
