@@ -70,3 +70,11 @@ table td:nth-child(3) {
 table h3 {
     margin: 0;
 }
+
+h4 {
+    line-height: 1.4;
+}
+
+h1:focus {
+    outline: none;
+}
