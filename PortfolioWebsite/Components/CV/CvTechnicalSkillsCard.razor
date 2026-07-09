@@ -2,7 +2,7 @@
 <div class="cv-card">
 
     <h4 class="cv-title">@Item.Title</h4>
-    <h4 class="cv-subtitle">@Item.Content</h4>
+    <h4 class="cv-subtitle">@((MarkupString)Item.Content)</h4>
     
 </div>
 @code {

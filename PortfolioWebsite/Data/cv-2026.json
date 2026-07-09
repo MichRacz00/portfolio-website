@@ -6,9 +6,9 @@
       "location": "Warsaw, Poland",
       "period": "Nov 2025 - Present",
       "bulletPoints": [
-        "Developed a greenfield cloud-native microservice using Spring Boot. Integrated the application with Azure services (Blob Storage, Cosmos DB, Key Vault) using Managed Identity authentication.",
-        "Designed and implemented GitHub Actions workflows to provision, configure, and deploy cloud infrastructure via Bicep follwing Infrastructure as Code.",
-        "Implemented continuous integration workflows to enforce test coverage and build and publish Docker containers for release."
+        "Developed a <strong>greenfield cloud-native microservice using</strong> Spring Boot. Integrated the application with <strong>Azure</strong> services (Blob Storage, Cosmos DB, Key Vault) using <strong>Managed Identity</strong> authentication.",
+        "Designed and implemented <strong>GitHub Actions</strong> workflows to provision, configure, and deploy cloud infrastructure via Bicep follwing Infrastructure as Code.",
+        "Implemented <strong>continuous integration</strong> workflows to enforce test coverage and build and publish <strong>Docker</strong> containers for release."
       ]
     },
     {
@@ -17,9 +17,9 @@
       "location": "Warsaw, Poland",
       "period": "Jan 2024 - Sep 2024",
       "bulletPoints": [
-        "Delivered a containerized microservice, to processes large Excel call logs, load data into a database, and generate aggregated reports for employees.",
-        "Designed and implemented a GitHub Actions workflow that deploys microservices into Docker containers, with builds to both ARM and x86 machines.",
-        "Designed a continuous deployment workflow that updates the microservice running on on-premise server."
+        "Delivered a <strong>containerized microservice</strong>, to processes large Excel call logs, load data into a database, and generate aggregated reports for employees.",
+        "Designed and implemented a <strong>GitHub Actions</strong> workflow that deploys microservices into Docker containers, with builds to both ARM and x86 machines.",
+        "Designed a <strong>continuous deployment</strong> workflow that updates the microservice running on on-premise server."
       ]
     }
   ],
@@ -31,7 +31,7 @@
       "period": "Sep 2023 – June 2025",
       "bulletPoints": [
         "Thesis: Model Checking Under JAM21 Memory Model– supervisor recommended publication; developed first experimental model checking algorithm for verifying Java memory model (Grade: 8.19/10)",
-        "Coursework: Distributed & Advanced Algorithms, Security & Cryptography, Software Architecture"
+        "Coursework: <strong>Distributed & Advanced Algorithms</strong>, Security & Cryptography, Software Architecture"
       ]
     },
     {
@@ -42,6 +42,38 @@
       "bulletPoints": [
         "Thesis: Better Approach To Mobile Ad-hoc Networking in MaritimeManet– contributed to maritime ad-hoc network now deployed by Thales. Full text here (Grade: 7.27/10)"
       ]
+    }
+  ],
+  "technical skills": [
+    {
+      "title": "Programming Languages",
+      "content": "C#, Rust"
+    },
+    {
+      "title": "Tools",
+      "content": "Azure Services, Docker (with Compose), Linux (server, networking), Infrastructure as Code, CI/CD"
+    },
+    {
+      "title": "Certifications",
+      "content": "Azure Developer Associate (<a hreg=\"https://learn.microsoft.com/en-us/users/michracz/credentials/1a71010bf50ea170\">AZ-204</a>), GitHub Actions (<a href=\"https://learn.microsoft.com/en-us/users/michracz/credentials/b15175944c0b2cce\">GH-900</a>)"
+    }
+  ],
+  "soft skills": [
+    {
+      "title": "Initiative",
+      "content": "Naturally assumed leadership in small project teams, coordinating tasks and ensuring quality delivery. Always approaches problems and tasks proactively."
+    },
+    {
+      "title": "Independence",
+      "content": "Designed and implemented complex technical solutions autonomously"
+    },
+    {
+      "title": "Curiosity",
+      "content": "Enjoys exploring new concepts and approaches, focusing on why behind them rather than how."
+    },
+    {
+      "title": "Cross-Cultural Experience",
+      "content": "Collaborated in international teams, mentoring peers and delivered tasks in diverse environments."
     }
   ]
 }

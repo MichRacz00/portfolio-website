@@ -32,7 +32,7 @@
         <ul class="cv-content">
             @foreach (var point in Item.BulletPoints)
             {
-                <li>@point</li>
+                <li>@((MarkupString)point)</li>
             }
         </ul>
     }
