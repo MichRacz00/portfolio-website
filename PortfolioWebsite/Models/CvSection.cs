@@ -4,7 +4,8 @@ public enum CvSectionType
 {
     Experience,
     Education,
-    Skills
+    TechnicalSkills,
+    SoftSkills
 }
 
 public class CvSection
@@ -21,7 +22,8 @@ public class CvSection
         {
             "experience" => CvSectionType.Experience,
             "education" => CvSectionType.Education,
-            "skills" => CvSectionType.Skills,
+            "technical skills" => CvSectionType.TechnicalSkills,
+            "soft skills" => CvSectionType.SoftSkills,
             _ => throw new InvalidOperationException(
                 $"Unknown CV section type '{value}'.")
         };

@@ -1,0 +1,11 @@
+@using PortfolioWebsite.Components.Models
+<div class="cv-card">
+
+    <h4 class="cv-title">@Item.Title</h4>
+    <h4 class="cv-subtitle">@Item.Content</h4>
+    
+</div>
+@code {
+    [Parameter, EditorRequired]
+    public CvItem Item { get; set; }
+}

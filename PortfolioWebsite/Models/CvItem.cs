@@ -18,4 +18,7 @@ public class CvItem
     
     [JsonPropertyName("bulletPoints")]
     public List<string> BulletPoints { get; set; } = new();
+
+    [JsonPropertyName("content")]
+    public string Content { get; set; } = "";
 }
