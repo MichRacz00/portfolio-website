@@ -5,14 +5,13 @@ namespace PortfolioWebsite.Components.Services;
 
 public class CvServiceConfig : ICvService
 {
-    private readonly IConfiguration _configuration;
     private readonly List<CvSection> _sections;
 
     public CvServiceConfig(IConfiguration configuration)
     {
-        var _configuration = configuration.GetSection("CV");
+        var cvConfig = configuration.GetSection("CV");
         
-        var path = _configuration.GetValue<string>("filePath")
+        var path = cvConfig.GetValue<string>("filePath")
                    ?? throw new InvalidOperationException("CV file path is not configured.");
         
         if (!File.Exists(path))
