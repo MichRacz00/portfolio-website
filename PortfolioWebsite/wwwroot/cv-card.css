@@ -1,4 +1,7 @@
-﻿
+/* ==========================================================
+   CV Card
+   ========================================================== */
+
 .cv-container {
     max-width: 720px;
     margin: 2rem auto;
@@ -33,12 +36,8 @@
     min-width: 140px;
 }
 
-.cv-period {
-    font-size: 1rem;
-}
-
 .cv-title,
-.cv-subtitle, 
+.cv-subtitle,
 .cv-location,
 .cv-period {
     font-size: 1rem;
@@ -54,8 +53,4 @@
 
 .cv-content {
     margin-left: 10px;
-}
-
-li {
-    font-weight: lighter;
 }
