@@ -1,0 +1,17 @@
+.project-card-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.project-image {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.project-body {
+    flex: 1;
+}
