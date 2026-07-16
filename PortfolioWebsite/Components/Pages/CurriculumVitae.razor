@@ -6,9 +6,9 @@
 
 <PageTitle>Curriculum Vitae</PageTitle>
 
-<div class="cv-container">
+<div class="page-section">
 	@foreach (var cvSection in CvSections) {
-		<h2 class="cv-section-title">@cvSection.DisplayName</h2>
+		<h2 class="section-title">@cvSection.DisplayName</h2>
 		@foreach (var cvItem in cvSection.Items) {
 			@switch (cvSection.Type) {
     			case CvSectionType.Experience:
