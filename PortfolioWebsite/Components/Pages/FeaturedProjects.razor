@@ -1,0 +1,37 @@
+@page "/projects"
+@using PortfolioWebsite.Components.Models
+@using PortfolioWebsite.Components.Projects
+
+<PageTitle>Featured Projects</PageTitle>
+
+<div class="page-section">
+    <h2 class="section-title">Featured Projects</h2>
+
+    @foreach (var project in Projects)
+    {
+        <ProjectCard Item="project" />
+    }
+</div>
+
+@code {
+    private List<ProjectItem> Projects = new()
+    {
+        new ProjectItem
+        {
+            Title       = "Portfolio Website",
+            Description = "This portfolio website, built with Blazor Server and .NET. " +
+                          "Showcases experience, skills, and selected projects in a clean academic style.",
+            ImageSrc    = "profile.jpg",
+            LinkUrl     = "https://github.com",
+            LinkLabel   = "View on GitHub"
+        },
+        new ProjectItem
+        {
+            Title       = "Project Two (stub)",
+            Description = "Description of a second featured project. Replace this text and image with real content.",
+            ImageSrc    = "profile.jpg",
+            LinkUrl     = "#",
+            LinkLabel   = "Coming Soon"
+        }
+    };
+}

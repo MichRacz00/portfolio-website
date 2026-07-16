@@ -1,0 +1,17 @@
+@using PortfolioWebsite.Components.Models
+
+<div class="card project-card">
+    <div class="project-card-inner">
+        <img class="project-image" src="@Item.ImageSrc" alt="@Item.Title" />
+        <div class="project-body">
+            <h4 class="card-title">@Item.Title</h4>
+            <p>@Item.Description</p>
+            <a class="button" href="@Item.LinkUrl" target="_blank" rel="noopener noreferrer">@Item.LinkLabel</a>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public ProjectItem Item { get; set; } = default!;
+}
